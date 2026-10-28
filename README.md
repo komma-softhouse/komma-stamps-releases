@@ -1,89 +1,94 @@
+<div align="center">
+
 # Komma Stamps
 
-The phone of **Komma Stamps**. It certifies photos, videos and documents the
-moment they are taken: the phone computes their SHA-256 fingerprint and only
-that fingerprint is anchored on Arbitrum One, so the file never leaves the
-device. It follows every anchor until it is confirmed, signs the contracts
-waiting for you and checks any certificate by its QR or by its file. It keeps
-working when the network drops.
+**Certify your files on Arbitrum One, from the desktop**
 
-## Download
+Watch folders and certify what you save as you save it, on its own or after your
+approval. The SHA-256 fingerprint is computed on your computer and anchored in
+batches on Arbitrum One: the file never leaves your machine. Sign contracts and
+verify any certificate. It keeps working without a connection.
 
-| System | Download |
-| --- | --- |
-| **Android 13 or later** | [Latest version](https://github.com/komma-softhouse/komma-stamps-android-releases/releases/latest): the `.apk` file |
+A product of **Komma SoftHouse**.
 
-Every published version is listed under
-[Releases](https://github.com/komma-softhouse/komma-stamps-android-releases/releases).
-Each version also carries its `.sha256` file to check that the `.apk` has not
-been altered. The easiest way is to download it from the panel itself, in
-**Stamps → Apps**, which always links the latest version.
+[**⬇ Download the latest version**](https://github.com/komma-softhouse/komma-stamps-releases/releases/latest)
 
-## What it does
+</div>
 
-- **Certify at capture.** Take a photo or record a video from the app, or choose
-  a document of the phone. The fingerprint is computed on the phone and shown
-  before anything is sent; you give it a title and anchor it with one credit.
-- **Only the fingerprint travels.** The photo, the video or the document never
-  leaves the phone. When the camera gives the place of a photo, you decide photo
-  by photo whether it goes with the certification.
-- **R&D notebooks.** With a plan, a certification can be chained as the next
-  version of a notebook of your workspace.
-- **Certificates.** Each certification shows its steps (fingerprint, Merkle
-  batch, block), its public certificate with QR, the PDF to share and the
-  evidence pack.
-- **Contracts.** The contracts waiting for your signature open in the signing
-  portal inside the app.
-- **Verify.** Read the QR of any Komma Stamps certificate, or choose the file you
-  were sent and check whether its fingerprint is anchored.
-- **Without network.** What you certify waits on the phone, in order, and goes
-  out by itself when there is network; a retry never spends a second credit. The
-  date that counts is the one of the anchor.
-- **Notifications.** A notification arrives when an anchor is confirmed or fails.
-- **Lock.** Optionally, the app asks for your fingerprint or your face when it
-  opens.
-- **Updates itself.** From **Account → Updates**, without Google Play.
+---
 
-## Install
+## Downloads
 
-1. On the phone, open the
-   [latest version](https://github.com/komma-softhouse/komma-stamps-android-releases/releases/latest)
-   and download the `.apk` file.
-2. Open it. If Android asks for permission to install apps from this source,
-   allow it for the browser and go back.
-3. Tap **Install**. Komma Stamps appears in the app drawer.
+Download the installer for your operating system from the
+[**latest version**](https://github.com/komma-softhouse/komma-stamps-releases/releases/latest).
+
+| System                    | File            | Notes                                       |
+| ------------------------- | --------------- | ------------------------------------------- |
+| **Windows**               | `…-setup.exe`   | Installer. Double-click and follow the wizard. |
+| **macOS (Apple Silicon)** | `…-arm64.dmg`   | For Macs with an M1/M2/M3/M4 chip.          |
+| **macOS (Intel)**         | `…-x64.dmg`     | For Macs with an Intel processor.           |
+
+> Not sure which one? On Windows download the `.exe`; on a recent Mac the
+> **arm64** `.dmg`; on an older Mac the **x64** `.dmg`.
+
+---
+
+## Installation
+
+### Windows
+1. Download the `…-setup.exe` file.
+2. Open it and follow the wizard.
+3. If Windows shows an **"unknown publisher"** warning (SmartScreen), click
+   **More info → Run anyway**. The application is safe; the warning appears
+   because the installer is not yet signed with a Windows certificate.
+
+### macOS
+1. Download the `.dmg` for your Mac (arm64 or x64).
+2. Open it and drag **Komma Stamps** to the **Applications** folder.
+3. Open it from Applications. The application is signed and notarized by Apple.
+
+---
+
+## Automatic updates
+
+The application **updates itself**. When it opens, it checks for a new version,
+downloads it in the background and applies it on restart. You can also check
+for updates by hand in **Settings → Updates → Check for updates**.
+
+There is no need to download anything again after the first installation.
+
+---
 
 ## Getting started
 
-1. **In the panel** of your workspace, go to **Stamps → Apps → Pair an app**. A
-   code and its QR appear, valid for 15 minutes and for a single use.
-2. **On the phone**, tap **Read the QR of the panel** and point at the QR (or type
-   the address of your workspace and the code), name this phone and tap **Pair**.
-3. **Certify.** From **Home**, choose *Photo*, *File* or *Verify*. The phone
-   certifies with the credits of your plan, as the user who made the code.
+1. In the panel of your workspace open **Stamps → Apps → Pair an app**: it shows
+   the workspace address and a code valid for 15 minutes.
+2. Open the application, type the address and the code, name this computer and
+   click **Pair**.
+3. In **Watched folders** add a folder and choose how it is certified:
+   **Automatic** (as files are saved, up to a daily limit) or **Ask me first**
+   (files wait in the tray of the Desk).
+4. To certify something once, drop it on **Certify files**.
+5. Contracts waiting for your signature appear in **Contracts** and open in the
+   browser, where AutoFirma and Web eID work.
 
-## Requirements
-
-- Android 13 or later.
-- Rear camera for photos, videos and reading QR codes.
-- Wi-Fi or mobile data to reach your workspace. Certifying works without network:
-  the fingerprint waits on the phone until it can be sent.
-
-## Updates
-
-In **Account → Updates** tap **Check for updates**. If there is a new version,
-**Download and install** fetches it, checks that it arrived complete and opens
-the Android installer. The first time, Android asks to allow installing from
-Komma Stamps. The phone keeps its pairing and everything still waiting to be
-sent.
-
-## If something fails
-
-When the app meets an unexpected error it shows an incident code and a button to
-report it. The report reaches Komma with the code, the version and the screen,
-never a file or a fingerprint of yours. If you call support, have the code at
-hand.
+---
 
 ## Support
 
-Komma SoftHouse · [stamps.kommasofthouse.com](https://stamps.kommasofthouse.com) · info@kommasofthouse.com
+Trouble installing, pairing or using the application?
+Contact **Komma SoftHouse**.
+
+- Web: https://stamps.kommasofthouse.com
+- Support: info@kommasofthouse.com
+
+---
+
+<div align="center">
+
+© Komma SoftHouse. All rights reserved.
+
+This repository only contains the published installers.
+The source code is private and owned by Komma SoftHouse.
+
+</div>
